@@ -1,0 +1,134 @@
+
+html, body {
+  height: 100%; /* Necesario para asegurar que la imagen cubra toda la pantalla */
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina el padding predeterminado */
+}
+
+
+/* Estilo de fondo para toda la página */
+body {
+  background-image: url('./img/fondo.jpg'); /* Ruta a la imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente divertida para todo el texto */
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina padding predeterminado */
+}
+
+/* Estilo de la tabla */
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: transparent; /* Fondo transparente para la tabla */
+}
+
+/* Estilo de las celdas */
+td {
+  border: 2px solid #2E8B57; /* Borde de color verde para simular el pasto */
+  width: 60px; /* Aumentado para que las imágenes se vean más grandes */
+  height: 60px; /* Aumentado para que las imágenes se vean más grandes */
+  text-align: center;
+  position: relative; /* Necesario para que las imágenes se ubiquen correctamente */
+  background-size: contain; /* Ajusta la imagen sin distorsionar */
+  background-position: center; /* Centra la imagen */
+  background-color: transparent; /* Color de fondo de las celdas (verde claro) */
+}
+
+/* Estilo para el héroe (Bugs Bunny) */
+.heroe {
+  background-image: url('./img/heroe.png'); /* Imagen de Bugs Bunny */
+  background-size: contain; /* Ajusta la imagen */
+  background-position: center;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilo para el tesoro (zanahoria) */
+.cofre {
+  background-image: url('./img/zanahoria.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Estilo del suelo (áreas vacías) */
+.suelo {
+  background-color: #98FB98; /* Color más claro para el suelo */
+}
+
+/* Resaltado de las celdas */
+.resaltado {
+  background-color: yellow; /* Amarillo para resaltar las celdas disponibles */
+}
+
+/* Estilo de error en el nombre */
+.invalid {
+  border-color: red;
+}
+
+/* Mensajes de la interfaz */
+#mensaje {
+  font-size: 18px;
+  color: #2E8B57; /* Verde para el texto del mensaje */
+  font-weight: bold;
+}
+
+/* Estilo del título y la bienvenida */
+h1, #bienvenida {
+  color: #ffffff; /* Verde oscuro */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente más divertida y amigable */
+}
+
+/* Estilo para el botón de jugar */
+button {
+  background-color: #FF8C00; /* Naranja para resaltar el botón */
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#tirarDado{
+  display: none;
+}
+
+/* Estilo para los botones de acción */
+button:hover {
+  background-color: #FF6347; /* Rojo tomate cuando se pasa el cursor */
+}
+
+
+#formulario {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nombreError{
+  color: red;
+}
+
+#tirada {
+  font-size: 80px;
+    font-weight: bold;
+    margin-right: 20px; /* Espacio entre el dado y el botón */
+    display: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #ac811a;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
